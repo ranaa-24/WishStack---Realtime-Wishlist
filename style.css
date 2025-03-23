@@ -1,0 +1,113 @@
+*, 
+*::after, 
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+:root{
+    --primary : #CC74AE;
+    --secondary: #aaa6a938;
+}
+
+body{
+    background-color: #faedf5;
+    user-select: none;
+}
+img{
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+}
+
+#input-field{
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 0 10px 0;
+}
+
+#input-field:focus-visible{
+    outline: none;
+    border: 1.5px solid var(--primary);
+}
+
+#add-btn{
+    background-color: var(--primary);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #c26fa6;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    border: 2px solid var(--primary);
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.shopingList{
+    height: 200px;
+    max-height: 200px;
+    background-color: var(--secondary);
+    margin: 10px 0;
+    overflow-y: scroll;
+    scrollbar-width: none;  /* hides scroll bar */
+    padding: .5rem;
+    position: relative;
+    border-radius: 8px;
+}
+
+#empty-msg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 20px;
+    color: var(--primary);
+    
+}
+
+#list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+
+}
+
+#list li{
+    list-style-type: none;
+    background-color: #fffdf8;
+    padding: 12px;
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+    &:hover{
+        background-color: #ffb4b4;
+    }
+}

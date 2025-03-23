@@ -1,0 +1,20 @@
+{
+    "short_name": "Wish Stack",
+    "name": "Wish Stack",
+    "icons": [
+      {
+        "src": "/assets/favicon2.jpeg",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/favicon2.jpeg",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "display": "standalone",
+    "theme_color": "#aaa6a938",
+    "background_color": "#aaa6a938"
+  }
+  
